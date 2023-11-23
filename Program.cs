@@ -18,7 +18,21 @@ class Program
 
         string[] newArray = new string[sourceArray.Length];
         int newIndex = 0;
+  
+  for (int i = 0; i < sourceArray.Length; i++)
+        {
+            if (sourceArray[i].Length <= 3)
+            {
+                newArray[newIndex] = sourceArray[i];
+                newIndex++;
+            }
+        }
 
+        Array.Resize(ref newArray, newIndex);
+
+        Console.Write($"[{string.Join(", ", sourceArray)}] → ");
+        Console.WriteLine($"[{string.Join(", ", newArray)}]");
+        
       
     }
 }
