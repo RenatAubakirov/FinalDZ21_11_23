@@ -4,5 +4,21 @@
 Примеры:
 [“Hello”, “2”, “world”, “:-)”] → [“2”, “:-)”]
 [“1234”, “1567”, “-2”, “computer science”] → [“-2”]
-[“Russia”, “Denmark”, “Kazan”] → []*/
+[“Russia”, “Denmark”, “Kazan”] → [] */
 
+
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите элементы исходного массива (через запятую):");
+        string[] sourceArray = Console.ReadLine().Split(',');
+
+        string[] newArray = new string[sourceArray.Length];
+        int newIndex = 0;
+
+      
+    }
+}
