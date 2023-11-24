@@ -30,7 +30,7 @@ class Program
         Array.Resize(ref newArray, newIndex);
 
         Console.Write($"[\"{string.Join("\",\"", sourceArray)}\"] → ");
-        Console.WriteLine($"[\"{string.Join("\",\"", newArray)}]");
+        Console.WriteLine($"[\"{string.Join("\",\"", newArray)}\"]");
         
       
     }
