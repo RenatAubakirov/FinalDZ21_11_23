@@ -8,12 +8,11 @@
 
 
 using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Введите элементы исходного массива (через запятую):");
+        Console.WriteLine("Введите элементы исходного массива (через запятую, после ввода елементов нажмите enter):");
         string[] sourceArray = Console.ReadLine().Split(',');
 
         string[] newArray = new string[sourceArray.Length];
@@ -30,8 +29,8 @@ class Program
 
         Array.Resize(ref newArray, newIndex);
 
-        Console.Write($"[{string.Join(", ", sourceArray)}] → ");
-        Console.WriteLine($"[{string.Join(", ", newArray)}]");
+        Console.Write($"[\"{string.Join("\",\"", sourceArray)}\"] → ");
+        Console.WriteLine($"[\"{string.Join("\",\"", newArray)}]");
         
       
     }
